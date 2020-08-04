@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IRENE"
+        android:textSize="45sp"
+        android:textColor="#2CC2E3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/styleinput"
+        android:paddingLeft="10dp"
+        android:inputType="textPersonName"
+        android:hint="Nama"
+        android:textColorHint="#E7E1E1"/>
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/input1"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/styleinput"
+        android:inputType="textLongMessage"
+        android:hint="Alamat"
+        android:textColorHint="#E7E1E1"
+        android:paddingLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/input3"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/input2"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/styleinput"
+        android:paddingLeft="10dp"
+        android:inputType="text"
+        android:hint="Kampus"
+        android:textColorHint="#E7E1E1"/>
+
+    <ImageView
+        android:id="@+id/img_1"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/input3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="23dp"
+        android:src="@drawable/rv"/>
+    <ImageView
+        android:id="@+id/img_2"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_toRightOf="@id/img_1"
+        android:layout_below="@id/input3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/rv"/>
+    <ImageView
+        android:id="@+id/img_3"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_toRightOf="@id/img_2"
+        android:layout_below="@id/input3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/rv"/>
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="87dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/img_1"
+        android:layout_marginLeft="87dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button"
+        android:text="KEMBALI"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="87dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/img_1"
+        android:layout_toRightOf="@+id/btn_back"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button"
+        android:text="NEXT"
+        android:textColor="#FFFFFF"/>
+</RelativeLayout>
